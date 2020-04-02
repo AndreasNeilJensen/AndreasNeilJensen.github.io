@@ -42,10 +42,14 @@ p.boldBigBlackText {
 
  /* Style all font awesome icons */
  .fa {
-  padding: 25px;
+  background-color: rgb(0, 125, 250);
+  color: white;
+  border-radius: 10%;
+  padding: 2.5px;
   font-size: 50px;
-  height: 100px;
-  width: 100px;
+  height: 55px;
+  width: 55px;
+  vertical-align: middle;
   text-align: center;
   text-decoration: none;
 }
@@ -54,4 +58,52 @@ p.boldBigBlackText {
 .fa:hover {
   opacity: 0.5;
   text-decoration: none;
+}
+
+/* Github */
+.fa-github {
+  background: none;
+  color: black;
+}
+
+/* LinkedIn */
+.fa-linkedin {
+  background: rgb(25, 115, 225);;
+  color: white;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: rgb(0, 125, 250);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div.socialMediaBox {
+  background-color: rgb(240, 240, 240);
+  color: white;
+  padding: 20px 20px;
+  text-align: left;
+  border: none;
+  border-radius: 4px;
 }

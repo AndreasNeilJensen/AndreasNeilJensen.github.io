@@ -17,9 +17,6 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css">
-
-
-
   </head>
 
   <body id="TopOfPage">
@@ -46,12 +43,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 mx-auto">
-            <h1>
-              Andreas Neil Jensen
-            </h1>
-            <h3>
-              A Software Engineer with a little extra "umph"!
-            </h3>
+            <h1>Andreas Neil Jensen</h1>
+            <h3>A Software Engineer with a little extra "umph"!</h3>
           </div>
         </div>
       </div>
@@ -62,17 +55,13 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 mx-auto">
-            <h2>
-              About Me
-            </h2>
+            <h2>About Me</h2><br>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-6 mx-auto">
             <div>
-              <p class="boldBigBlackText">
-                Hi, I'm Andreas, a Software Engineer from Denmark, Aalborg.
-              </p>
+              <p class="boldBigBlackText">Hi, I'm Andreas, a Software Engineer from Denmark, Aalborg.</p>
             </div>
           </div>
           <div class="col-lg-6 mx-auto">
@@ -93,18 +82,10 @@
             <br>
             <div class="row">
               <div class="col-lg-6 mx-auto">
-                <p class="lead">
-                  BSc in Engineering (Software)
-                  <br>
-                  Aalborg University, 2018
-                </p>
+                <p class="lead">BSc in Engineering (Software)<br>Aalborg University, 2018</p>
               </div>
               <div class="col-lg-6 mx-auto">
-                <p class="lead">
-                  MSc in Engineering (Software)
-                  <br>
-                  Aalborg University, 2020
-                </p>
+                <p class="lead">MSc in Engineering (Software)<br>Aalborg University, 2020</p>
               </div>
             </div>
           </div>
@@ -120,38 +101,26 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 mx-auto">
-            <h2>
-              Projects
-            </h2>
+            <h2>Projects</h2><br>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-3 mx-auto">
-            <h3>
-              et projekt
-            </h3>
+            <h3>et projekt</h3>
           </div>
           <div class="col-lg-3 mx-auto">
-            <h3>
-              et projekt
-            </h3>
+            <h3>et projekt</h3>
           </div>
           <div class="col-lg-3 mx-auto">
-            <h3>
-              et projekt
-            </h3>
+            <h3>et projekt</h3>
           </div>
           <div class="col-lg-3 mx-auto">
-            <h3>
-              et projekt
-            </h3>
+            <h3>et projekt</h3>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-12 mx-auto">
-            <p class="lead">
-                Want more? Check out my Github portfolio where you can see examples of code written by me!
-            </p>
+            <p class="lead">Want more? Check out my Github portfolio where you can see examples of code written by me!</p>
           </div>
         </div>
       </div>
@@ -164,36 +133,37 @@
             <h2>
               Contact Me
             </h2>
+            <br>
         </div>
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <div class="container">
-              <form action="action_page.php">
-                <label for="fname">First Name</label>
-                <br>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                <br>
-                <label for="lname">Last Name</label>
-                <br>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                <br>  
-                <label for="subject">Subject</label>
-                <br>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                <br>
-                <input type="submit" value="Submit">
+              <form id="simpleForm" class="gform" name="form" method="POST" action="https://script.google.com/macros/s/AKfycbyl3gBOqOsH8PLcXGsND0MDGtXsRbOg8HjHl17wTQSchS-jziHD/exec">
+                <br><input type="text" required id="name" name="name" pattern="[A-Za-z]{3}" placeholder="Your name..">
+                <br><input type="text" required id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Your email..">
+                <br><input type="text" required id="phone" name="phone" pattern="[0-9\-\+]{8,15}" placeholder="Your phonenumber..">
+                <br><textarea required id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                <br><input type="submit" value="Submit">
+                <div style="display:none" class="thankyou_message">
+                  <!-- You can customize the thank you message by editing the code below -->
+                  <br><h2><em>Thanks</em> for contacting me! <br> I will get back to you soon!</h2>
+                </div>
               </form>
             </div> 
           </div>
           <div class="col-lg-4 mx-auto">
-            <p>
-              <a href="https://github.com/AndreasNeilJensen" class="fa fa-github" target="_blank"></a>
-              <a href="https://github.com/AndreasNeilJensen" target="_blank">github.com/AndreasNeilJensen</a>
-            </p>
-            <p>
-              <a href="https://linkedin.com/in/AndreasNeilJensen/" class="fa fa-linkedin" target="_blank"></a>
-              <a href="https://linkedin.com/in/AndreasNeilJensen/" target="_blank">linkedin.com/in/AndreasNeilJensen</a>
-            </p>
+            <div class="container socialMediaBox">
+              <div style="display: inline-block; ">
+                <p class="lead" style="font-size: 0.75em;">
+                  <a href="https://github.com/AndreasNeilJensen" class="fa fa-github" target="_blank"></a>
+                  <a href="https://github.com/AndreasNeilJensen" target="_blank">github.com/AndreasNeilJensen</a>
+                </p>
+                <p class="lead" style="font-size: 0.75em;">
+                  <a href="https://linkedin.com/in/AndreasNeilJensen/" class="fa fa-linkedin" target="_blank"></a>
+                  <a href="https://linkedin.com/in/AndreasNeilJensen" target="_blank">linkedin.com/in/AndreasNeilJensen</a>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -208,7 +178,9 @@
           <a href="https://linkedin.com/in/AndreasNeilJensen/" target="_blank">linkedin</a>
         </p>
       </div>
-      <!-- /.container -->
     </footer>
-  </body>
+
+      <!-- adding the submissionhandler javascript -->
+    <script data-cfasync="false" type="text/javascript" src="js/submissionhandler.js"></script>
+    </body>
 </html>
