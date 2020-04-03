@@ -14,24 +14,47 @@ section.notfrontsection-height {
   height: calc(100vh - 56px);
 }
 
-section.pictureBackground {
-  background-color: rgb(255, 0, 200);
-}
-
 section.whiteBackground {
   background-color: white;
 }
 
 section.darkBackground {
-  background-color: rgb(50, 50, 50);
+  background-color: rgb(52, 58, 64);
 }
 
 section.blueBackground {
   background-color: rgb(0, 125, 250);
 }
 
-section.OrangeBackground {
-  background-color: rgb(255, 100, 0);
+section.homeBackground {
+  background-image: url('../images/marius-masalar.jpg');	
+  background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+  width: fit-content;
+  height: fit-content;
+}
+
+section.aboutMeBackground {
+  background-color: white;
+  /* background-image: url('../images/marius-masalar.jpg');	*/
+  background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+  width: fit-content;
+  height: fit-content;
+}
+
+section.projectsBackground {
+  background-color: rgb(240, 240, 240);
+  /*
+  background-image: url('../images/artem-sapegin.jpg');	
+  background-position:center;
+	background-repeat:no-repeat;
+  background-size:cover;
+  */
+  width: fit-content;
+  height: fit-content;
 }
 
 p.boldBigBlackText {
@@ -63,13 +86,19 @@ p.boldBigBlackText {
 /* Github */
 .fa-github {
   background: none;
-  color: black;
+  color: rgb(25, 115, 225);
 }
 
 /* LinkedIn */
 .fa-linkedin {
-  background: rgb(25, 115, 225);;
+  background: rgb(25, 115, 225);
   color: white;
+}
+
+/* Email */
+.fa-envelope {
+  background: none;
+  color: rgb(25, 115, 225);
 }
 
 /* Style inputs with type="text", select elements and textareas */
@@ -106,4 +135,76 @@ div.socialMediaBox {
   text-align: left;
   border: none;
   border-radius: 4px;
+}
+
+div.steganography {
+  background-image: url('../images/markus-winkler.jpg');	
+  background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+  width: fit-content;
+  height: 100px;
+  padding: 20px 20px;
+  text-align: left;
+  border: none;
+  border-radius: 4px;
+}
+
+div.timeCritical {
+  background-image: url('../images/veri-ivanova.jpg');	
+  background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+  width: fit-content;
+  height: 100px;
+  padding: 20px 20px;
+  text-align: left;
+  border: none;
+  border-radius: 4px;
+}
+
+div.augmentedReality {
+  background-image: url('../images/jay-heike.jpg');	
+  background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+  width: fit-content;
+  height: 100px;
+  padding: 20px 20px;
+  text-align: left;
+  border: none;
+  border-radius: 4px;
+}
+
+div.tangibleInterface {
+  background-image: url('../images/rick-mason.jpg');	
+  background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+  width: fit-content;
+  height: 100px;
+  padding: 20px 20px;
+  border-radius: 4px;
+  text-align: left;
+  border: none;
+}
+
+div.innerProjectBox {
+  background-color: rgb(52, 58, 64, 0.3);
+  border-radius: 4px;
+  padding: 20px 20px;
+  text-align: left;
+  height: 200px;
+  color: black;
+  border: none;
+}
+
+div.outerProjectBox {
+  background-color: white;
+  border-radius: 4px;
+  padding: 20px 20px;
+  text-align: left;
+  height: inherit;
+  color: black;
+  border: none;
 }
