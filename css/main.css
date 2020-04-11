@@ -46,7 +46,7 @@ section.aboutMeBackground {
 }
 
 section.projectsBackground {
-  background-color: rgb(220, 225, 225);
+  background-color: rgb(235, 235, 235);
   /*
   background-image: url('../images/artem-sapegin.jpg');	
   background-position:center;
@@ -129,7 +129,7 @@ input[type=submit]:hover {
 }
 
 div.socialMediaBox {
-  background-color: rgb(220, 225, 225);
+  background-color: rgb(235, 235, 235);
   color: white;
   padding: 20px 20px;
   text-align: left;
@@ -190,7 +190,7 @@ div.tangibleInterface {
 }
 
 div.educationBox {
-  background-color: rgb(220, 225, 225);
+  background-color: rgb(235, 235, 235);
   border-radius: 4px;
   padding: 20px 20px;
   text-align: left;
@@ -225,7 +225,11 @@ a.projectLinker {
 }
 
 .projectLinker:hover {
-  opacity: 0.75;
+  opacity: 0.85;
+}
+
+.lead {
+  margin-bottom: 4px;
 }
 
 #randomQuote {
