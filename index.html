@@ -21,7 +21,7 @@
 
   <body id="TopOfPage">
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#TopOfPage">Andreas Neil Jensen</a>
         <ul class="navbar-nav ml-auto">
@@ -42,9 +42,13 @@
     <section class="homeBackground frontsection-height">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 mx-auto">
-            <h1 style="font-size: 3.75em;">Andreas Neil Jensen</h1>
-            <h3 style="font-size: 2em;">Software Engineer, but with a little extra "umph"!</h3>
+          <div class="col-md-12 mx-auto">
+            <h1 style="font-size: calc(1em + 2vmax);">Andreas Neil Jensen</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 mx-auto">
+            <h3 id="randomQuote" style="font-size: calc(1em + 3vmax);">A Software Engineer, but with a little extra 'umph'!</h3>
           </div>
         </div>
       </div>
@@ -54,17 +58,17 @@
     <section id="AboutMe" class="aboutMeBackground">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 mx-auto">
+          <div class="col-md-12 mx-auto">
             <h2>About Me</h2><br>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-6 mx-auto">
+          <div class="col-md-6 mx-auto">
             <div>
-              <h1>Hi, I'm Andreas, a Software Engineer from Denmark, Aalborg.</h1>
+              <h2 style="font-size: calc(1em + 1.5vmax);">Hi, I'm Andreas, a Software Engineer from Denmark.</h2>
             </div>
           </div>
-          <div class="col-lg-6 mx-auto">
+          <div class="col-md-6 mx-auto">
             <div>
               <p class="lead">
                 I am profoundly passionate about the development of a future where innovative technology brings 
@@ -74,21 +78,19 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-8 mx-auto">
+          <div class="col-md-8 mx-auto">
             <p class="lead">
               I specialize in object-oriented programming, complex data structures, 
               advanced algorithms and programming for long periods of time surviving only on coffee and/or energy drinks.
             </p>
-            <div class="row">
-              <div class="col-lg-6 mx-auto">
-                <p class="lead">BSc in Engineering (Software)<br>Aalborg University, 2018</p>
-              </div>
-              <div class="col-lg-6 mx-auto">
-                <p class="lead">MSc in Engineering (Software)<br>Aalborg University, 2020</p>
+            <div class="row educationBox">
+              <div class="col-md-12 mx-auto">
+                <p class="text-center lead">MSc in Engineering (Software)<br>Aalborg University, 2020</p>
               </div>
             </div>
+            <br>
           </div>
-          <div class="col-lg-4 mx-auto">
+          <div class="col-md-4 mx-auto">
             <img src="images/selfie.png" class="img-fluid rounded" alt="Responsive image">
           </div>
         </div>
@@ -99,40 +101,44 @@
     <section id="Projects" class="projectsBackground">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 mx-auto">
+          <div class="col-md-12 mx-auto">
             <h2>Projects</h2><br>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-6 mx-auto">
+          <div class="col-md-6 mx-auto">
             <div class="outerProjectBox">
               <div><h3>Using Augmented Reality and Drones to Aid Firefighters and Rescue Workers</h3></div>
               <br><div class="augmentedReality"></div>
-              <br><p>Ongoing: en lille intro til projeeeektet</p>
+              <br><p>Saving people from fires is no easy task! (so I've been told at least) I co-authored a research paper in which we describe the process we undertook of creating a Augmented Reality UAV based system meant to help locate survivors during high-risk situations!</p>
               <ul>
                 <li>Microsoft HoloLens</li>
                 <li>.NET Framework</li>
-                <li>Tello SDK</li>
+                <li>Tello Drone SDK</li>
                 <li>Unity3D</li>
+                <li>C#</li>
               </ul>
             </div>
             <br>
-            <div class="outerProjectBox">
-              <div><h3>Steganography, Pictures and You!</h3></div>
-              <br><div class="steganography"></div>
-              <br><p>In an attempt to ease access to encryption and decryption tools for the layman, I was part of an effort to develop an app which successfully hid encrypted messages within the pixels of pictures.</p>
-              <ul>
-                <li>RSA and AES Encryption</li>
-                <li>.NET Framework</li>
-                <li>Graph-theory</li>
-              </ul>
-            </div>
+            <a class="projectLinker" href="https://github.com/AndreasNeilJensen/Sif" target="_blank">
+              <div class="outerProjectBox">
+                <div><h3>Fully Free Encryption</h3></div>
+                <br><div class="steganography"></div>
+                <br><p>Utilizing components from the .NET Framework, Fully Free Encryption is a free lightweight RSA encryption/decryption program meant for Windows 10 and later. Fully Free Encryption can encrypt files of varying file size depending on the chosen key size.</p>
+                <ul>
+                  <li>RSA Encryption</li>
+                  <li>.NET Framework</li>
+                  <li>XML</li>
+                  <li>C#</li>
+                </ul>
+              </div>
+            </a>
           </div>
-          <div class="col-lg-6 mx-auto">
+          <div class="col-md-6 mx-auto">
             <div class="outerProjectBox">
               <div><h3>Teaching Programming to Visually Impaired Children Through Tangible Interfaces</h3></div>
               <br><div class="tangibleInterface"></div>
-              <br><p>Due to an increased interest amongst visually impaired people in tools supporting the learning of programming, I co-authored a research paper analysing and designing the optimal tangible interface for programming for people with visual impairment. The findings of the research paper where presented to representatives of The Lego Foundation.</p>
+              <br><p>I co-authored a research paper analysing and designing the optimal tangible interface for programming for people with visual impairment. The findings of the research paper were presented to designers and business stakeholders at The LEGO Foundation headquarters in Billund, Denmark.</p>
               <ul>
                 <li>Flutter</li>
                 <li>ev3Dev</li>
@@ -141,9 +147,9 @@
             </div>
             <br>
             <div class="outerProjectBox">
-              <div><h3>Time Critical Greenhouses in Space!</h3></div>
+              <div><h3>Time Critical Greenhouses.. in Space?!</h3></div>
               <br><div class="timeCritical"></div>
-              <br><p>Through UPPAAL modelled timed automatas I took part in verifying the schedulability of a robot designed to take care of a greenhouse.</p>
+              <br><p>Through UPPAAL modelled timed automatas I took part in verifying the schedulability of a robot designed to take care of a greenhouse meant to support hydroponics as it relates to space travel.</p>
               <ul>
                 <li>UPPAAL</li>
                 <li>nxtOSEK</li>
@@ -153,7 +159,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-12 mx-auto">
+          <div class="col-md-12 mx-auto">
             <br><div class="outerProjectBox">
               <p class="lead">Want more? Check out my <a href="https://github.com/AndreasNeilJensen" target="_blank">Github</a> portfolio account, where you can find tangible examples of projects written excusively by me, <em>including this website!</em></p>
             </div>
@@ -161,22 +167,21 @@
         </div>
       </div>
     </section>
-
     <!-- Contact Me  -->
     <!-- https://fontawesome.com/v4.7.0/cheatsheet/ for future reference, holy fuck they were difficult to find  -->
     <section id="ContactMe" class="whiteBackground">
       <div class="container">
-        <div class="col-lg-12 mx-auto">
+        <div class="col-md-12 mx-auto">
             <h2>
               Contact Me
             </h2>
             <br>
         </div>
         <div class="row">
-          <div class="col-lg-8 mx-auto">
+          <div class="col-md-8 mx-auto">
             <div class="container">
               <form id="simpleForm" class="gform" name="form" method="POST" action="https://script.google.com/macros/s/AKfycbyl3gBOqOsH8PLcXGsND0MDGtXsRbOg8HjHl17wTQSchS-jziHD/exec">
-                <br><input type="text" required id="name" name="name" pattern="[A-Za-z]{3}" placeholder="Your name..">
+                <br><input type="text" required id="name" name="name" pattern="[A-Za-z]{3,15}" placeholder="Your name..">
                 <br><input type="text" required id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Your email..">
                 <br><input type="text" required id="phone" name="phone" pattern="[0-9\-\+]{8,15}" placeholder="Your phonenumber..">
                 <br><textarea required id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
@@ -188,7 +193,7 @@
               </form>
             </div> 
           </div>
-          <div class="col-lg-4 mx-auto">
+          <div class="col-md-4 mx-auto">
             <br><div class="container socialMediaBox">
               <div style="display: inline-block; ">
                 <p class="lead" style="font-size: 0.75em;">
@@ -213,7 +218,7 @@
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Andreas Neil Jensen 2020 &copy; All rights reserved</p>
+        <p class="m-0 text-center text-white">Andreas Neil Jensen, 2020</p>
         <p class="text-center">
           <a href="https://github.com/AndreasNeilJensen" target="_blank">github</a>
           <a href="https://linkedin.com/in/AndreasNeilJensen/" target="_blank">linkedin</a>
@@ -233,5 +238,8 @@
 
       <!-- Custom JavaScript for this theme -->
       <script src="js/scrolling-nav.js"></script>
+
+      <!-- Custom JavaScript  -->
+      <script src="js/customMethods.js"></script>
     </body>
 </html>

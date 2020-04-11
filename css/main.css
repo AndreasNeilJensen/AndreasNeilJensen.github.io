@@ -46,7 +46,7 @@ section.aboutMeBackground {
 }
 
 section.projectsBackground {
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(220, 225, 225);
   /*
   background-image: url('../images/artem-sapegin.jpg');	
   background-position:center;
@@ -129,7 +129,7 @@ input[type=submit]:hover {
 }
 
 div.socialMediaBox {
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(220, 225, 225);
   color: white;
   padding: 20px 20px;
   text-align: left;
@@ -189,12 +189,12 @@ div.tangibleInterface {
   border: none;
 }
 
-div.innerProjectBox {
-  background-color: rgb(52, 58, 64, 0.3);
+div.educationBox {
+  background-color: rgb(220, 225, 225);
   border-radius: 4px;
   padding: 20px 20px;
   text-align: left;
-  height: 200px;
+  height: inherit;
   color: black;
   border: none;
 }
@@ -207,4 +207,29 @@ div.outerProjectBox {
   height: inherit;
   color: black;
   border: none;
+}
+
+/* This is here because rows act like idiots on smaller devices with regards to padding*/
+a.projectLinker {
+  text-align: center;
+  text-decoration: none;
+  padding-inline-end: 20px;
+  height: inherit;
+}
+
+/* This is here because rows act like idiots on smaller devices with regards to padding*/
+@media screen and (min-width: 768px) {
+  a.projectLinker {
+    padding-inline-end: 0;
+  }
+}
+
+.projectLinker:hover {
+  opacity: 0.75;
+}
+
+#randomQuote {
+  opacity: 1;
+  transition: 1s opacity;
+  font-size:32px;
 }
