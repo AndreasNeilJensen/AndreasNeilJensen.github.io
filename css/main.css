@@ -189,10 +189,9 @@ div.tangibleInterface {
   border: none;
 }
 
-div.educationBox {
+div.socialBox {
   background-color: rgb(235, 235, 235);
-  border-radius: 4px;
-  padding: 20px 20px;
+  padding: 1em 1em;
   text-align: left;
   height: inherit;
   color: black;
@@ -201,8 +200,7 @@ div.educationBox {
 
 div.outerProjectBox {
   background-color: white;
-  border-radius: 4px;
-  padding: 20px 20px;
+  padding: 1em 1em;
   text-align: left;
   height: inherit;
   color: black;
@@ -213,15 +211,7 @@ div.outerProjectBox {
 a.projectLinker {
   text-align: center;
   text-decoration: none;
-  padding-inline-end: 20px;
-  height: inherit;
-}
-
-/* This is here because rows act like idiots on smaller devices with regards to padding*/
-@media screen and (min-width: 768px) {
-  a.projectLinker {
-    padding-inline-end: 0;
-  }
+  padding-inline-end: 0;
 }
 
 .projectLinker:hover {
@@ -236,4 +226,8 @@ a.projectLinker {
   opacity: 1;
   transition: 1s opacity;
   font-size:32px;
+}
+
+.row{
+  margin: 0em 0em 1em 0em;
 }
