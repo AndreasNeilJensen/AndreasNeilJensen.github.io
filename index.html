@@ -44,14 +44,15 @@
     <!-- Start Page -->
     <section class="homeBackground frontsection-height">
       <div class="container">
+        <br><br><br>
         <div class="row">
           <div class="col-md-12 mx-auto">
-            <h1 style="font-size: calc(1em + 2vmax);">Andreas Neil Jensen</h1>
+            <h1 style="font-size: calc(1em + 1vmax);">Andreas Neil Jensen</h1>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12 mx-auto">
-            <h3 id="randomQuote" style="font-size: calc(1em + 2vmax);">A Software Engineer, but with a little extra 'umph'!</h3>
+            <h3 id="randomQuote" style="font-size: calc(1em + 5vmin);">A Software Engineer, but with a little extra 'umph'!</h3>
           </div>
         </div>
       </div>
@@ -86,6 +87,8 @@
               I specialize in object-oriented programming, complex data structures, 
               advanced algorithms and programming for long periods of time surviving only on coffee and/or energy drinks.
             </p>
+            <br>
+            <p class="text-center lead">MSc in Software Engineering.<br>Aalborg University, 2020</p>
           </div>
           <div class="col-md-4 mx-auto">
             <img src="images/selfie.png" class="img-fluid rounded" alt="Responsive image">
@@ -103,6 +106,8 @@
       </div>
     </section>
 
+    <!-- Using Augmented Reality and Drones to Aid Firefighters and Rescue Workers -->
+    <!-- Saving people from fires is no easy task! (or so I've heard) I co-authored a research paper in which we describe the process we undertook of creating a Augmented Reality UAV based system meant to help locate survivors during high-risk situations! -->
     <!-- Projects -->
     <section id="Projects" class="projectsBackground">
       <div class="container">
@@ -113,54 +118,71 @@
         </div>
         <div class="row">
           <div class="col-md-6 mx-auto"  style="margin: 0em 0em 1em 0em;">
-            <div class="outerProjectBox">
-              <div><h3>Using Augmented Reality and Drones to Aid Firefighters and Rescue Workers</h3></div>
-              <br><div class="augmentedReality"></div>
-              <br><p>Saving people from fires is no easy task! (or so I've heard) I co-authored a research paper in which we describe the process we undertook of creating a Augmented Reality UAV based system meant to help locate survivors during high-risk situations!</p>
-              <ul>
-                <li>Microsoft HoloLens</li>
-                <li>.NET Framework</li>
-                <li>Tello Drone SDK</li>
-                <li>Unity3D</li>
-                <li>C#</li>
-              </ul>
+            <div class="outerProjectBox gaming">
+              <div class="projectInnerBox"><h3 class="text-center">Ducks? DOING PARKOUR?!</h3></div><br>
+              <div class="row projectInnerBox">
+                <div class="col-xs-6 mx-auto">
+                  <a href="https://github.com/AndreasNeilJensen/Freyja" class="fa fa-github" target="_blank"></a>
+                </div>
+                <div class="col-xs-6 mx-auto">
+                  <a href="https://andreasneiljensen.github.io/Freyja/" class="fa fa-play-circle" target="_blank"></a>
+                </div>
+              </div>
+              <div class="projectInnerBox">
+                <p>Freyja is a platforming game in which you control a duck who has to utilise its parkour skills in order to survive its escape from the farm! I constructed Freyja in order to showcase my game development skills.</p>
+                <ul>
+                  <li>.NET Framework</li>
+                  <li>Unity3D</li>
+                  <li>WebGL</li>
+                  <li>C#</li>
+                </ul>
+              </div>
             </div>
             <br>
-            <a class="projectLinker" href="https://github.com/AndreasNeilJensen/Sif" target="_blank">
-              <div class="outerProjectBox">
-                <div><h3>Fully Free Encryption</h3></div>
-                <br><div class="steganography"></div>
-                <br><p>Utilizing components from the .NET Framework, Fully Free Encryption is a free lightweight RSA encryption/decryption program meant for Windows 10 and later. Fully Free Encryption can encrypt files of varying file size depending on the chosen key size.</p>
+            <div class="outerProjectBox fireFighting">
+              <div class="projectInnerBox"><h3 class="text-center">Using Augmented Reality and Drones to Aid Firefighters and Rescue Workers</h3></div><br>
+              <div class="projectInnerBox">
+                <p>Saving people from fires is no easy task! (or so I've been told) I co-authored a research paper in which we describe the process we undertook of creating a Augmented Reality UAV based system meant to help locate survivors during high-risk situations!</p>
                 <ul>
-                  <li>RSA Encryption</li>
+                  <li>Microsoft HoloLens</li>
                   <li>.NET Framework</li>
+                  <li>Tello Drone SDK</li>
+                  <li>Unity3D</li>
+                  <li>C#</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- The work is currently undergoing revision awaiting admittance into a published Journal (CAR) -->
+          <div class="col-md-6 mx-auto">
+            <div class="outerProjectBox encryption">
+              <div class="projectInnerBox"><h3 class="text-center">Fully Free Encryption</h3></div><br>
+              <div class="row projectInnerBox">
+                <div class="col-xs-12 mx-auto">
+                  <a href="https://github.com/AndreasNeilJensen/Sif" class="fa fa-github" target="_blank"></a>
+                </div>
+              </div>
+              <div class="projectInnerBox">
+                <p>Utilizing components from the .NET Framework, Fully Free Encryption is a free lightweight RSA encryption/decryption program meant for Windows 10 and later. Fully Free Encryption can encrypt files of varying file size depending on the chosen key size.</p>
+                <ul>
+                  <li>.NET Framework</li>
+                  <li>RSA Encryption</li>
                   <li>XML</li>
                   <li>C#</li>
                 </ul>
               </div>
-            </a>
-          </div>
-          <div class="col-md-6 mx-auto">
-            <div class="outerProjectBox">
-              <div><h3>Teaching Programming to Visually Impaired Children Through Tangible Interfaces</h3></div>
-              <br><div class="tangibleInterface"></div>
-              <br><p>I co-authored a research paper analysing and designing the optimal tangible interface for programming for people with visual impairment. The findings of the research paper were presented to designers and business stakeholders at The LEGO Foundation headquarters in Billund, Denmark.</p>
-              <ul>
-                <li>Flutter</li>
-                <li>ev3Dev</li>
-                <li>Python</li>
-              </ul>
             </div>
             <br>
-            <div class="outerProjectBox">
-              <div><h3>Time Critical Greenhouses.. in Space?!</h3></div>
-              <br><div class="timeCritical"></div>
-              <br><p>Through UPPAAL modelled timed automatas I took part in verifying the schedulability of a robot designed to take care of a greenhouse meant to support hydroponics as it relates to space travel.</p>
-              <ul>
-                <li>UPPAAL</li>
-                <li>nxtOSEK</li>
-                <li>Java</li>
-              </ul>
+            <div class="outerProjectBox tangibleInterface">
+              <div class="projectInnerBox"><h3 class="text-center">Teaching Programming to Visually Impaired Children Through Tangible Interfaces</h3></div><br>
+              <div class="projectInnerBox"> 
+                <p>I co-authored a research paper analysing and designing the optimal tangible interface for programming for people with visual impairment. The findings of the research paper were presented to designers and business stakeholders at The LEGO Foundation headquarters in Billund, Denmark.</p>
+                <ul>
+                  <li>Flutter</li>
+                  <li>ev3Dev</li>
+                  <li>Python</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

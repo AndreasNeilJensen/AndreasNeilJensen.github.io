@@ -137,7 +137,7 @@ div.socialMediaBox {
   border-radius: 4px;
 }
 
-div.steganography {
+div.encryption {
   background-image: url('../images/markus-winkler.jpg');	
   background-position:center;
 	background-repeat:no-repeat;
@@ -150,8 +150,8 @@ div.steganography {
   border-radius: 4px;
 }
 
-div.timeCritical {
-  background-image: url('../images/veri-ivanova.jpg');	
+div.gaming {
+  background-image: url('../images/mateo-vrbnjak.jpg');	
   background-position:center;
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -163,7 +163,7 @@ div.timeCritical {
   border-radius: 4px;
 }
 
-div.augmentedReality {
+div.fireFighting {
   background-image: url('../images/jay-heike.jpg');	
   background-position:center;
 	background-repeat:no-repeat;
@@ -200,6 +200,15 @@ div.socialBox {
 
 div.outerProjectBox {
   background-color: white;
+  padding: 1em 1em;
+  text-align: left;
+  height: inherit;
+  color: black;
+  border: none;
+}
+
+div.projectInnerBox {
+  background-color: rgba(255, 255, 255, 0.80);
   padding: 1em 1em;
   text-align: left;
   height: inherit;

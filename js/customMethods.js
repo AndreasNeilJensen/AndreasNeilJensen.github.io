@@ -1,8 +1,8 @@
 
 var txtArray = [
     'A Software Engineer, but with a little extra \'umph\'!', 
-    'MSc in Software Engineering.\nAalborg University, 2020',
-    'Passionate, Creative, Result Oriented, Easily Distracted by Dogs',
+    'MSc in Software Engineering.<br>Aalborg University, 2020',
+    'Result Oriented, Creative,<br>Easily Distracted by Dogs',
     'Dependable, Versatile, Analytical AND an avid listener of the Joe Rogan experience podcast'];
 
 function randomtext() {
