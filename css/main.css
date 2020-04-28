@@ -83,6 +83,12 @@ p.boldBigBlackText {
   text-decoration: none;
 }
 
+/* Play Button */
+.fa-play-circle {
+  background-color: rgb(0, 125, 250, 0);
+  color: black;
+}
+
 /* Github */
 .fa-github {
   background: none;
