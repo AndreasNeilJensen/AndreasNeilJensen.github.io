@@ -21,9 +21,10 @@
 
   <body id="TopOfPage">
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="mainNav">
+    <nav class="hide-mobile navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#TopOfPage">Andreas Neil Jensen</a>
+        <!-- Links -->
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#AboutMe">About Me</a>
@@ -40,6 +41,36 @@
         </ul>
       </div>
     </nav>
+    <nav class="show-mobile navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="mainNav">
+      <!-- Collapse button -->
+      <button style="border: none;" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent1"
+      aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+      </button>
+      
+      <a class="text-right navbar-brand js-scroll-trigger" href="#TopOfPage">Andreas Neil Jensen</a>
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+        <!-- Links -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#AboutMe">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#ContactMe">Contact Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://andreasneiljensen.github.io/resume/" target="_blank">Resume</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Collapsible content -->
+    </nav>
+
+
 
     <!-- Start Page -->
     <section class="homeBackground frontsection-height">
@@ -67,28 +98,23 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6 mx-auto">
+          <div class="col-md-8 mx-auto">
             <div>
               <h2 style="font-size: calc(1em + 1.5vmax);">Hi, I'm Andreas, a Software Engineer from Denmark.</h2>
             </div>
-          </div>
-          <div class="col-md-6 mx-auto">
+            <br>
             <div>
               <p class="lead">
                 I am profoundly passionate about the development of a future where innovative technology brings 
                 humanity closer and further than the day before.
               </p>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-8 mx-auto">
+            <br>
             <p class="lead">
               I specialize in object-oriented programming, complex data structures, 
               advanced algorithms and programming for long periods of time surviving only on coffee and/or energy drinks.
             </p>
             <br>
-            <p class="text-center lead">MSc in Software Engineering.<br>Aalborg University, 2020</p>
           </div>
           <div class="col-md-4 mx-auto">
             <img src="images/selfie.png" class="img-fluid rounded" alt="Responsive image">
@@ -98,7 +124,7 @@
           <div class="col-md-12">
             <div class="socialBox">
               <p class="text-center lead">
-                Why don't you check out my <a href="https://andreasneiljensen.github.io/resume/" target="_blank">resume</a> if you're interested?
+                <b></b>9 out of 10 dentists recommends checking out my <a href="https://andreasneiljensen.github.io/resume/" target="_blank">resume</a> and getting in touch!
               </p>
             </div>
           </div>
@@ -122,7 +148,7 @@
               <div class="projectInnerBox"><h3 class="text-center">Ducks? DOING PARKOUR?!</h3></div><br>
               <div class="row projectInnerBox">
                 <div class="text-center col-xs-6 mx-auto">
-                  <a href="https://github.com/AndreasNeilJensen/Freyja" class="fa fa-github fa-github-project" target="_blank"></a>
+                  <a href="https://github.com/AndreasNeilJensen/Freyja" class="fa fa-github" target="_blank"></a>
                   <p>View Code</p>
                 </div>
                 <div class="text-center col-xs-6 mx-auto">
