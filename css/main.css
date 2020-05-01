@@ -157,7 +157,7 @@ div.encryption {
 }
 
 div.gaming {
-  background-image: url('../images/mateo-vrbnjak.jpg');	
+  background-image: url('../images/Freyja.PNG');	
   background-position:center;
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -214,7 +214,7 @@ div.outerProjectBox {
 }
 
 div.projectInnerBox {
-  background-color: rgba(255, 255, 255, 0.80);
+  background-color: rgba(255, 255, 255, 0.65);
   padding: 1em 1em;
   text-align: left;
   height: inherit;
