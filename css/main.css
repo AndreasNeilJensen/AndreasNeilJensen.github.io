@@ -81,6 +81,12 @@ p.boldBigBlackText {
   color: black;
 }
 
+/* Video Button */
+.fa-film {
+  background: none;
+  color: rgb(100, 100, 100);
+}
+
 /* Github */
 .fa-github {
   background: none;
