@@ -21,9 +21,10 @@
 
   <body id="TopOfPage">
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="mainNav">
+    <nav class="hide-mobile navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#TopOfPage">Andreas Neil Jensen</a>
+        <!-- Links -->
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#AboutMe">About Me</a>
@@ -40,6 +41,36 @@
         </ul>
       </div>
     </nav>
+    <nav class="show-mobile navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="mainNav">
+      <!-- Collapse button -->
+      <button style="border: none;" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent1"
+      aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+      </button>
+      
+      <a class="text-right navbar-brand js-scroll-trigger" href="#TopOfPage">Andreas Neil Jensen</a>
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+        <!-- Links -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#AboutMe">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#ContactMe">Contact Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://andreasneiljensen.github.io/resume/" target="_blank">Resume</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Collapsible content -->
+    </nav>
+
+
 
     <!-- Start Page -->
     <section class="homeBackground frontsection-height">
@@ -67,28 +98,23 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6 mx-auto">
+          <div class="col-md-8 mx-auto">
             <div>
               <h2 style="font-size: calc(1em + 1.5vmax);">Hi, I'm Andreas, a Software Engineer from Denmark.</h2>
             </div>
-          </div>
-          <div class="col-md-6 mx-auto">
+            <br>
             <div>
               <p class="lead">
                 I am profoundly passionate about the development of a future where innovative technology brings 
                 humanity closer and further than the day before.
               </p>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-8 mx-auto">
+            <br>
             <p class="lead">
               I specialize in object-oriented programming, complex data structures, 
               advanced algorithms and programming for long periods of time surviving only on coffee and/or energy drinks.
             </p>
             <br>
-            <p class="text-center lead">MSc in Software Engineering.<br>Aalborg University, 2020</p>
           </div>
           <div class="col-md-4 mx-auto">
             <img src="images/selfie.png" class="img-fluid rounded" alt="Responsive image">
@@ -98,7 +124,7 @@
           <div class="col-md-12">
             <div class="socialBox">
               <p class="text-center lead">
-                Why don't you check out my <a href="https://andreasneiljensen.github.io/resume/" target="_blank">resume</a> if you're interested?
+                <b></b>9 out of 10 dentists recommends checking out my <a href="https://andreasneiljensen.github.io/resume/" target="_blank">resume</a> and getting in touch!
               </p>
             </div>
           </div>
@@ -121,11 +147,13 @@
             <div class="outerProjectBox gaming">
               <div class="projectInnerBox"><h3 class="text-center">Ducks? DOING PARKOUR?!</h3></div><br>
               <div class="row projectInnerBox">
-                <div class="col-xs-6 mx-auto">
-                  <a href="https://github.com/AndreasNeilJensen/Freyja" class="fa fa-github fa-github-project" target="_blank"></a>
+                <div class="text-center col-xs-6 mx-auto">
+                  <a href="https://github.com/AndreasNeilJensen/Freyja" class="fa fa-github" target="_blank"></a>
+                  <p>View Code</p>
                 </div>
-                <div class="col-xs-6 mx-auto">
+                <div class="text-center col-xs-6 mx-auto">
                   <a href="https://andreasneiljensen.github.io/Freyja/" class="fa fa-play-circle" target="_blank"></a>
+                  <p>Play Game</p>
                 </div>
               </div>
               <div class="projectInnerBox">
@@ -139,10 +167,39 @@
               </div>
             </div>
             <br>
+            <div class="outerProjectBox loginsystem">
+              <div class="projectInnerBox"><h3 class="text-center">A MIT licensed signup and login system</h3></div><br>
+              <div class="row projectInnerBox">
+                <div class="text-center col-xs-6 mx-auto">
+                  <a href="https://github.com/AndreasNeilJensen/Heimdall" class="fa fa-github" target="_blank"></a>
+                  <p>View Code</p>
+                </div>
+              </div>
+              <div class="projectInnerBox">
+                <p>Heimdall is a signup and login system offered, by me, for free under the MIT license. Heimdall features hashed passwords, and in its current implementation utilises XAMPP in order to acccess a locally hosted database.</p>
+                <ul>
+                  <li>MySQL</li>
+                  <li>HTML</li>
+                  <li>PHP</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+            </div>
+            <br>
             <div class="outerProjectBox fireFighting">
               <div class="projectInnerBox"><h3 class="text-center">Using Augmented Reality and Drones to Aid Firefighters and Rescue Workers</h3></div><br>
+              <div class="row projectInnerBox">
+                <div class="text-center col-xs-6 mx-auto">
+                  <a href="#" class="fa fa-github" target="_blank" style onclick="return false;"></a>
+                  <p>Coming soon</p>
+                </div>
+                <div class="text-center col-xs-12 mx-auto">
+                  <a href="https://drive.google.com/file/d/1KsVLpvcM6fGWzFjB9PZH-BeelVZPjAJB/view?usp=sharing" class="fa fa-film" target="_blank"></a>
+                  <p>View Video</p>
+                </div>
+              </div>
               <div class="projectInnerBox">
-                <p>Saving people from fires is no easy task! (or so I've been told) I co-authored a research paper in which we describe the process we undertook of creating a Augmented Reality UAV based system meant to help locate survivors during high-risk situations!</p>
+                <p>Saving people from fires is no easy task! (or so I've heard) I co-authored a research paper in which we describe the process we undertook of creating a Augmented Reality UAV based system meant to help locate survivors during high-risk situations!</p>
                 <ul>
                   <li>Microsoft HoloLens</li>
                   <li>.NET Framework</li>
@@ -158,8 +215,9 @@
             <div class="outerProjectBox encryption">
               <div class="projectInnerBox"><h3 class="text-center">Fully Free Encryption</h3></div><br>
               <div class="row projectInnerBox">
-                <div class="col-xs-12 mx-auto">
+                <div class="text-center col-xs-12 mx-auto">
                   <a href="https://github.com/AndreasNeilJensen/Sif" class="fa fa-github" target="_blank"></a>
+                  <p>View Code</p>
                 </div>
               </div>
               <div class="projectInnerBox">
@@ -175,9 +233,16 @@
             <br>
             <div class="outerProjectBox tangibleInterface">
               <div class="projectInnerBox"><h3 class="text-center">Teaching Programming to Visually Impaired Children Through Tangible Interfaces</h3></div><br>
+              <div class="row projectInnerBox">
+                <div class="text-center col-xs-6 mx-auto">
+                  <a href="https://github.com/Shantay-Pass/Mobile-Application" class="fa fa-github" target="_blank"></a>
+                  <p>View Code</p>
+                </div>
+              </div>
               <div class="projectInnerBox"> 
                 <p>I co-authored a research paper analysing and designing the optimal tangible interface for programming for people with visual impairment. The findings of the research paper were presented to designers and business stakeholders at The LEGO Foundation headquarters in Billund, Denmark.</p>
                 <ul>
+                  <li>Dart</li>
                   <li>Flutter</li>
                   <li>ev3Dev</li>
                   <li>Python</li>
@@ -222,7 +287,8 @@
             </div> 
           </div>
           <div class="col-md-4 mx-auto">
-            <br><div class="container socialMediaBox">
+            <br>
+            <div class="container socialMediaBoxContactMe">
               <div style="display: inline-block; ">
                 <p class="lead" style="font-size: 0.75em;">
                   <a href="https://github.com/AndreasNeilJensen" class="fa fa-github" target="_blank"></a>

@@ -65,8 +65,6 @@ p.boldBigBlackText {
 
  /* Style all font awesome icons */
  .fa {
-  background-color: rgb(0, 125, 250);
-  color: white;
   border-radius: 10%;
   padding: 2.5px;
   font-size: 50px;
@@ -85,14 +83,20 @@ p.boldBigBlackText {
 
 /* Play Button */
 .fa-play-circle {
-  background-color: rgb(0, 125, 250, 0);
+  background: none;
   color: black;
+}
+
+/* Video Button */
+.fa-film {
+  background: none;
+  color: rgb(100, 100, 100);
 }
 
 /* Github */
 .fa-github {
   background: none;
-  color: rgb(25, 115, 225);
+  color: rgb(100, 100, 100);
 }
 
 /* LinkedIn */
@@ -101,10 +105,15 @@ p.boldBigBlackText {
   color: white;
 }
 
+/* Bars */
+.fa-bars {
+  color: white;
+}
+
 /* Email */
 .fa-envelope {
   background: none;
-  color: rgb(25, 115, 225);
+  color: rgb(100, 100, 100);
 }
 
 /* Style inputs with type="text", select elements and textareas */
@@ -129,12 +138,17 @@ input[type=submit] {
   cursor: pointer;
 }
 
+button:focus {
+  border: none;
+  outline: none;
+}
+
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
   background-color: #45a049;
 }
 
-div.socialMediaBox {
+div.socialMediaBoxContactMe {
   background-color: rgb(235, 235, 235);
   color: white;
   padding: 20px 20px;
@@ -156,8 +170,21 @@ div.encryption {
   border-radius: 4px;
 }
 
+div.loginsystem {
+  background-image: url('../images/micah-williams.jpg');	
+  background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+  width: fit-content;
+  height: 100px;
+  padding: 20px 20px;
+  text-align: left;
+  border: none;
+  border-radius: 4px;
+}
+
 div.gaming {
-  background-image: url('../images/mateo-vrbnjak.jpg');	
+  background-image: url('../images/Freyja.PNG');	
   background-position:center;
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -214,7 +241,7 @@ div.outerProjectBox {
 }
 
 div.projectInnerBox {
-  background-color: rgba(255, 255, 255, 0.80);
+  background-color: rgba(255, 255, 255, 0.65);
   padding: 1em 1em;
   text-align: left;
   height: inherit;
@@ -245,4 +272,23 @@ a.projectLinker {
 
 .row{
   margin: 0em 0em 1em 0em;
+}
+
+/* https://stackoverflow.com/questions/19572044/changing-html-content-order-depending-on-screen-size/19572088 */
+@media only screen and (max-device-width: 768px) {
+  .show-mobile {
+    display: block;
+  }
+  .hide-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 768px) {
+  .show-mobile {
+    display: none;
+  }
+  .hide-mobile {
+    display: block;
+  }
 }
